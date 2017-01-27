@@ -8,17 +8,16 @@
 
 import UIKit
 
-class ViewController: UICollectionViewController {
+class StoryboardViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        title = "Storyboard"
+        
         let layout = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
         layout.sectionHeadersPinToVisibleBounds = true
-        
-        collectionView?.contentInset = UIEdgeInsetsMake(0, 0, -39, 0)
-        collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, -39, 0)
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
